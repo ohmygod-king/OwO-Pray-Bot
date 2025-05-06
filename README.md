@@ -9,10 +9,10 @@ Owo Pray Bot otomatis untuk menjalankan `owo pray` ke target user secara berkala
 
 ## ✨ Fitur
 
-- [x] **Multi-token support** (bisa gunakan banyak akun sekaligus)
+- [x] **Multi-token support**
 - [x] **Otomatis `owo pray`, `wpray`, `owopray`**
-- [x] **Random delay 5-6 menit** antar pray untuk natural
-- [x] **Typing Indicator** sebelum mengirim pesan
+- [x] **Random delay 5-6 menit**
+- [x] **Typing Indicator**
 - [x] **Delay Ketik Acak (3-5 detik)**
 - [x] **Auto-pause** jika mendeteksi Captcha dari OwO
 - [x] **Manual Commands:** `!pause`, `!resume`
