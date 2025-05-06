@@ -1,0 +1,16 @@
+{
+  "name": "OwO-Pray-Discord",
+  "version": "1.0.0",
+  "description": "OwO Auto Pray | Antiban Capchta",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": ["discord", "selfbot", "owo", "auto", "pray", "multi-token"],
+  "author": "YourName",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "discord.js-selfbot-v13": "^1.1.7"
+  }
+}
