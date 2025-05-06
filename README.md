@@ -1,20 +1,132 @@
-# Discord OwO Selfbot
+# Discord OwO Multi-Selfbot
 
-Bot otomatis untuk mengirim `owo pray`, `wpray`, atau `owopray` setiap 5–6 menit secara acak, dilengkapi dengan fitur pause/resume dan deteksi ⚠️. Cocok untuk farming OwO!
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Node](https://img.shields.io/badge/node-%3E=16.9.0-brightgreen)
 
-## Fitur
+Owo Pray Bot otomatis untuk menjalankan `owo pray` ke target user secara berkala menggunakan banyak akun (multi-token). Didesain khusus untuk farming OwO Pray secara efisien dan aman.
 
-- [x] Multi-token (support banyak akun)
-- [x] Random perintah: `owo pray`, `wpray`, atau `owopray`
-- [x] Auto typing 3–5 detik
-- [x] Delay antar akun agar tidak spam serentak
-- [x] Deteksi keyword (seperti ⚠️) untuk auto-pause akun
-- [x] Public command: `!pauseall`, `!resumeall`
-- [x] Modular dan mudah diatur melalui `config.js`
+---
 
-## Cara Pakai
+## ✨ Fitur
 
-1. **Clone repo:**
-   ```bash
-   git clone https://github.com/username/discord-owo-selfbot.git
-   cd discord-owo-selfbot
+- [x] **Multi-token support** (bisa gunakan banyak akun sekaligus)
+- [x] **Otomatis `owo pray`, `wpray`, `owopray`**
+- [x] **Random delay 5-6 menit** antar pray untuk natural
+- [x] **Typing Indicator** sebelum mengirim pesan
+- [x] **Delay Ketik Acak (3-5 detik)**
+- [x] **Auto-pause** jika mendeteksi Captcha dari OwO
+- [x] **Manual Commands:** `!pause`, `!resume`, `!setpray <user_id>`
+- [x] **Konfigurasi Mudah** via `config.js`
+
+---
+
+## ⚙️ Struktur Proyek
+
+```
+.
+├── package.json
+├── tokens.txt
+├── README.md
+└── src
+    ├── index.js              # Entry point utama
+    ├── config.js             # Konfigurasi channel dan user
+    ├── utils
+    │   └── autoPray.js       # Fungsi untuk auto pray
+    └── commands
+        └── control.js        # Handler untuk command !pause/resume/
+```
+
+---
+
+## 📦 Dependency
+
+| Library                  | Kegunaan                            |
+|-------------------------|--------------------------------------|
+| `discord.js-selfbot-v13@latest`| Library selfbot Discord utama       |
+| `chalk v4.1.2`                 | Memberi warna pada log terminal     |
+
+Install semuanya:
+```bash
+npm install
+```
+
+---
+
+## 🚀 Cara Memasang
+
+1. **Clone project ini atau download zip:**
+```bash
+git clone https://github.com/ohmygod-king/OwO-Pray-Bot.git
+cd Owo-Pray-Bot
+```
+
+2. **Masukkan token ke `tokens.txt` (1 baris per token):**
+```
+Njk2MzM...Token1
+OTIyNz...Token2
+```
+
+3. **Ubah `src/config.js` sesuai kebutuhan:**
+```js
+module.exports = {
+    targetChannelId: '1368556509814067371', // Channel ID
+    targetUserId: '788520888395104266', // Target User 
+
+    prayInterval: {
+        min: 5 * 60 * 1000, // 5 menit
+        max: 6 * 60 * 1000  // 6 menit
+    },
+
+    startDelay: {
+        min: 5000,
+        max: 15000
+    },
+
+    typingDelay: {
+        min: 3000,
+        max: 5000
+    },
+
+    warningKeywords: ['⚠️'],
+
+    commandPrefix: '!',
+    publicControl: true,
+    ownerId: '000000000000000000',
+
+    commands: {
+        pauseAll: 'pauseall',
+        resumeAll: 'resumeall'
+    },
+
+    useColorLogs: true
+};
+```
+
+4. **Jalankan bot:**
+```bash
+npm start
+```
+
+---
+
+## 🧠 Command
+
+| Command          | Fungsi                                     |
+|------------------|---------------------------------------------|
+| `!pause`         | Menjeda semua auto-pray sementara           |
+| `!resume`        | Melanjutkan kembali auto-pray               |
+
+> Catatan: Command bisa diketik siapa saja di channel target OwO.
+
+---
+
+## ⚠️ Disclaimer
+
+- Gunakan dengan bijak.
+- Risiko ditanggung pengguna.
+
+---
+
+## 📜 Lisensi
+
+MIT License © 2025 — [Gar.](https://github.com/ohmygod-king)
