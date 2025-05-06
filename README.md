@@ -15,7 +15,7 @@ Owo Pray Bot otomatis untuk menjalankan `owo pray` ke target user secara berkala
 - [x] **Typing Indicator** sebelum mengirim pesan
 - [x] **Delay Ketik Acak (3-5 detik)**
 - [x] **Auto-pause** jika mendeteksi Captcha dari OwO
-- [x] **Manual Commands:** `!pause`, `!resume`, `!setpray <user_id>`
+- [x] **Manual Commands:** `!pause`, `!resume`
 - [x] **Konfigurasi Mudah** via `config.js`
 
 ---
