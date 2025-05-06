@@ -12,7 +12,7 @@ const clients = [];
 console.clear();
 console.log(chalk.cyan(`╭───────────────────────────────────────────────╮`));
 console.log(chalk.cyan(`│         Discord OwO Selfbot Multi-Token       │`));
-console.log(chalk.cyan(`│             Developed by: YourName            │`));
+console.log(chalk.cyan(`│             Developed by: Prince            │`));
 console.log(chalk.cyan(`╰───────────────────────────────────────────────╯`));
 console.log('');
 
